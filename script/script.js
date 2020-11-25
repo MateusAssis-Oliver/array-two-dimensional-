@@ -19,7 +19,7 @@ function zera_M(array) {
     }
 }
 
-function exib_M(array) { console.log(array.length) }
+function exib_M(array) { console.table(array) }
 
 function matris_principal(array) {
 
@@ -58,11 +58,6 @@ let num_m = 7;
 //chamada da função que determina o numero de linhas == m; 
 //parametros o array e o numero de linhas
 cratArray(arrayBiD, num_m);
-
-
-
-
-
 alimenta_array(arrayBiD)
-console.table(arrayBiD)
-console.table(matris_principal(arrayBiD))
+exib_M(arrayBiD)
+exib_M(matris_principal(arrayBiD))
