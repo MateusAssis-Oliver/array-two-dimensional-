@@ -13,9 +13,12 @@ function cratArray(array, m) {
 
 //criando a matrix
 let arrayBi_D = [];
+//Numero de linhas que a matris vai ter 
+let m = 0;
 
-//chamada da função que determina o numero de linhas == m
-cratArray(arrayBi_D, 4);
+//chamada da função que determina o numero de linhas == m; 
+//parametros o array e o numero de linhas
+cratArray(arrayBi_D, num_m);
 
 console.table(arrayBi_D)
 
