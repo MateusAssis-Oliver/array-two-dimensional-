@@ -9,27 +9,31 @@ function cratArray(array, m) {
 }
 
 function zera_M(array) {
-
     for (let i = 0; i < array.length; i++) {
-
-        //coluna array
-        for (let j = 0; j < array[i].length; j++) {
-            array[i][j] = 0;
-        }
+        for (let j = 0; j < array[i].length; j++) { array[i][j] = 0; }
     }
 }
 
 function exib_M(array) { console.table(array) }
 
-function matris_principal(array) {
-
+function diagonal_P(array) {
     for (let m = 0; m < array.length; m++) {
         for (let n = 0; n < array[m].length; n++) {
-
             if (m != n) { array[m][n] = '-'; }
         }
     }
     return array;
+}
+
+function diagonal_S(array) {
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+            if (i + j != array[i].length - 1) { array[i][j] = "-" }
+        }
+    }
+    return array;
+
+
 }
 
 function alimenta_array(array) {
@@ -52,7 +56,7 @@ function alimenta_array(array) {
 let arrayBiD = [];
 
 //Numero de linhas que a matris vai ter 
-let num_m = 7;
+let num_m = 6;
 
 
 //chamada da função que determina o numero de linhas == m; 
@@ -60,4 +64,5 @@ let num_m = 7;
 cratArray(arrayBiD, num_m);
 alimenta_array(arrayBiD)
 exib_M(arrayBiD)
-exib_M(matris_principal(arrayBiD))
+    //exib_M(diagonal_P(arrayBiD))
+exib_M(diagonal_S(arrayBiD))
