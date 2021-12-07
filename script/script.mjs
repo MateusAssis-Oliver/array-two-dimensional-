@@ -1,4 +1,4 @@
-let algLin = {
+const algLin = {
 
     zera_M: (array) => {
         for (let i = 0; i < array.length; i++) {
